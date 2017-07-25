@@ -1,0 +1,975 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:inherit;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.identifier
+	{mso-style-name:identifier;}
+span.operator
+	{mso-style-name:operator;}
+span.string
+	{mso-style-name:string;}
+span.keyword
+	{mso-style-name:keyword;}
+span.paren
+	{mso-style-name:paren;}
+span.comment
+	{mso-style-name:comment;}
+span.number
+	{mso-style-name:number;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-AU link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:15.0pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><span
+style='font-size:27.0pt;font-family:"inherit","serif";color:#333333'>Data
+Science Capstone: Milestone Report</span></p>
+
+<p class=MsoNormal style='margin-top:7.5pt;margin-right:0in;margin-bottom:7.5pt;
+margin-left:0in;line-height:normal;background:white'><i><span style='font-size:
+13.5pt;font-family:"inherit","serif";color:#333333'>Karandeep Chadha</span></i></p>
+
+<p class=MsoNormal style='margin-top:7.5pt;margin-right:0in;margin-bottom:7.5pt;
+margin-left:0in;line-height:normal;background:white'><i><span style='font-size:
+13.5pt;font-family:"inherit","serif";color:#333333'>July 25, 2016</span></i></p>
+
+<p class=MsoNormal style='margin-top:15.0pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><span
+style='font-size:18.0pt;font-family:"inherit","serif";color:#333333'>Introduction</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>The goal of this project is just to display that you’ve gotten
+used to working with the data and that you are on track to create your
+prediction algorithm. Please submit a report on R Pubs (<a
+href="http://rpubs.com/"><span style='color:#337AB7;text-decoration:none'>http://rpubs.com/</span></a>)
+that explains your exploratory analysis and your goals for the eventual app and
+algorithm. This document should be concise and explain only the major features
+of the data you have identified and briefly summarize your plans for creating
+the prediction algorithm and Shiny app in a way that would be understandable to
+a non-data scientist manager. You should make use of tables and plots to
+illustrate important summaries of the data set.</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>The motivation for this project is to:</span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='color:#333333;line-height:normal;background:white'><span
+     style='font-size:10.5pt;font-family:"Helvetica","sans-serif"'>Demonstrate
+     that you’ve downloaded the data and have successfully loaded it in.</span></li>
+ <li class=MsoNormal style='color:#333333;line-height:normal;background:white'><span
+     style='font-size:10.5pt;font-family:"Helvetica","sans-serif"'>Create a
+     basic report of summary statistics about the data sets.</span></li>
+ <li class=MsoNormal style='color:#333333;line-height:normal;background:white'><span
+     style='font-size:10.5pt;font-family:"Helvetica","sans-serif"'>Report any
+     interesting findings that you amassed so far.</span></li>
+ <li class=MsoNormal style='color:#333333;line-height:normal;background:white'><span
+     style='font-size:10.5pt;font-family:"Helvetica","sans-serif"'>Get feedback
+     on your plans for creating a prediction algorithm and Shiny app.</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>So, let’s get started.</span></p>
+
+<p class=MsoNormal style='margin-top:15.0pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><span
+style='font-size:18.0pt;font-family:"inherit","serif";color:#333333'>1.
+Demonstrate that you’ve downloaded the data and have successfully loaded it in.</span></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:whitesmoke'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>downloadUrl</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>&lt;-</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dataDir</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>&lt;-</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;final&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><b><span
+style='font-size:10.0pt;font-family:"Courier New";color:#990000'>if</span></b><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(!</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dir.exists</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dataDir</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>))</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>    </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dataZipFile</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>&lt;-</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;Coursera-SwiftKey.zip&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>    </span><b><span
+style='font-size:10.0pt;font-family:"Courier New";color:#990000'>if</span></b><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(!</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>file.exists</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dataZipFile</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>))</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>        </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>download.file</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>downloadUrl</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dataZipFile</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>method</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;auto&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>    </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>unzip</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dataZipFile</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>    </span><b><span
+style='font-size:10.0pt;font-family:"Courier New";color:#990000'>if</span></b><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dir.exists</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dataDir</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>))</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>        </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>file.remove</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dataZipFile</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>Let us now inspect the unzipped files.</span></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:whitesmoke'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>list.files</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dataDir</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## [1] &quot;de_DE&quot;
+&quot;en_US&quot; &quot;fi_FI&quot; &quot;ru_RU&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>list.files</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>paste</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>dataDir</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;en_US&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>sep</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;/&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>))</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## [1]
+&quot;en_US.blogs.txt&quot;   &quot;en_US.news.txt&quot;   
+&quot;en_US.twitter.txt&quot;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>Now let’s load the data:</span></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:whitesmoke'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><i><span
+style='font-size:10.0pt;font-family:"Courier New";color:#999988'># Import
+datasets in text mode</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>blogs</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>&lt;-</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>suppressMessages</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>readLines</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;final/en_US/en_US.blogs.txt&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>encoding</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;UTF-8&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>))</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>twitter</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>&lt;-</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>suppressMessages</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>readLines</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;final/en_US/en_US.twitter.txt&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>encoding</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;UTF-8&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>))</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## Warning in
+readLines(&quot;final/en_US/en_US.twitter.txt&quot;, encoding =
+&quot;UTF-8&quot;):</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## line 167155 appears to
+contain an embedded nul</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## Warning in
+readLines(&quot;final/en_US/en_US.twitter.txt&quot;, encoding =
+&quot;UTF-8&quot;):</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## line 268547 appears to
+contain an embedded nul</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## Warning in
+readLines(&quot;final/en_US/en_US.twitter.txt&quot;, encoding =
+&quot;UTF-8&quot;):</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## line 1274086 appears to
+contain an embedded nul</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## Warning in
+readLines(&quot;final/en_US/en_US.twitter.txt&quot;, encoding =
+&quot;UTF-8&quot;):</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## line 1759032 appears to
+contain an embedded nul</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>news</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>&lt;-</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>suppressMessages</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>readLines</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;final/en_US/en_US.news.txt&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>encoding</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;UTF-8&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>))</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:15.0pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><span
+style='font-size:18.0pt;font-family:"inherit","serif";color:#333333'>2. Create
+a basic report of summary statistics about the data sets.</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>This section collects basic statistics about the data sets:</span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='color:#333333;line-height:normal;background:white'><span
+     style='font-size:10.5pt;font-family:"Helvetica","sans-serif"'>File Size</span></li>
+ <li class=MsoNormal style='color:#333333;line-height:normal;background:white'><span
+     style='font-size:10.5pt;font-family:"Helvetica","sans-serif"'>Line Count</span></li>
+ <li class=MsoNormal style='color:#333333;line-height:normal;background:white'><span
+     style='font-size:10.5pt;font-family:"Helvetica","sans-serif"'>Word Count</span></li>
+ <li class=MsoNormal style='color:#333333;line-height:normal;background:white'><span
+     style='font-size:10.5pt;font-family:"Helvetica","sans-serif"'>Number of
+     Characters</span></li>
+ <li class=MsoNormal style='color:#333333;line-height:normal;background:white'><span
+     style='font-size:10.5pt;font-family:"Helvetica","sans-serif"'>Non-Empty
+     Lines Count</span></li>
+ <li class=MsoNormal style='color:#333333;line-height:normal;background:white'><span
+     style='font-size:10.5pt;font-family:"Helvetica","sans-serif"'>Total
+     Non-White Characters</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>Let us first try with system commands:</span></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:whitesmoke'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>system</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;ls
+final/&quot;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>system</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;du -sh
+final/en_US/*&quot;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>system</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;wc
+final/en_US/en_US.blogs.txt&quot;</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>system</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;wc -l
+final/en_US/en_US.blogs.txt&quot;</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#687687'>)</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#333333'>      </span><i><span
+style='font-size:10.0pt;font-family:"Courier New";color:#999988'># this is much
+much faster</span></i></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>Now we will work with filesystem commands:</span></p>
+
+<p class=MsoNormal style='margin-top:7.5pt;margin-right:0in;margin-bottom:7.5pt;
+margin-left:0in;line-height:normal;background:white'><span style='font-size:
+13.5pt;font-family:"inherit","serif";color:#333333'>File Size:</span></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:whitesmoke'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>paste</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>round</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>file.info</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;final/en_US/en_US.blogs.txt&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)$</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>size</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>/</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#009999'>1024</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>^</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#009999'>2</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>))</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;MB&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## [1] &quot;200 MB&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>paste</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>round</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>file.info</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;final/en_US/en_US.news.txt&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)$</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>size</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>/</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#009999'>1024</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>^</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#009999'>2</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>))</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;MB&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## [1] &quot;196 MB&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>paste</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>round</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>file.info</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;final/en_US/en_US.twitter.txt&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)$</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>size</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>/</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#009999'>1024</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>^</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#009999'>2</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>))</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;MB&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## [1] &quot;159 MB&quot;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:7.5pt;margin-right:0in;margin-bottom:7.5pt;
+margin-left:0in;line-height:normal;background:white'><span style='font-size:
+13.5pt;font-family:"inherit","serif";color:#333333'>Line Count:</span></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:whitesmoke'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>suppressMessages</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>length</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>readLines</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;final/en_US/en_US.blogs.txt&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)))</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><i><span
+style='font-size:10.0pt;font-family:"Courier New";color:#999988'># very slow
+compared to system() command</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## [1] 899288</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>suppressMessages</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>length</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>readLines</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;final/en_US/en_US.news.txt&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)))</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## [1] 1010242</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>suppressMessages</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>length</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>readLines</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#DD1144'>&quot;final/en_US/en_US.twitter.txt&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)))</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## Warning in
+readLines(&quot;final/en_US/en_US.twitter.txt&quot;): line 167155 appears</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## to contain an embedded nul</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## Warning in
+readLines(&quot;final/en_US/en_US.twitter.txt&quot;): line 268547 appears</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## to contain an embedded nul</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## Warning in
+readLines(&quot;final/en_US/en_US.twitter.txt&quot;): line 1274086 appears</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## to contain an embedded nul</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## Warning in
+readLines(&quot;final/en_US/en_US.twitter.txt&quot;): line 1759032 appears</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## to contain an embedded nul</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## [1] 2360148</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:7.5pt;margin-right:0in;margin-bottom:7.5pt;
+margin-left:0in;line-height:normal;background:white'><span style='font-size:
+13.5pt;font-family:"inherit","serif";color:#333333'>Line, Word, Character
+Counts:</span></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:whitesmoke'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stringi</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>::</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stri_stats_general</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>blogs</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>##       Lines
+LinesNEmpty       Chars CharsNWhite </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>##      899288      899288  
+206824382   170389539</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stringi</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>::</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stri_stats_general</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>twitter</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>##       Lines
+LinesNEmpty       Chars CharsNWhite </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>##     2360148     2360148  
+162096031   134082634</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stringi</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>::</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stri_stats_general</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>news</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>##       Lines
+LinesNEmpty       Chars CharsNWhite </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>##     1010242     1010242  
+203223154   169860866</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>Let’s do some word operation and generate the distribution
+plots.</span></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:whitesmoke'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>blogs_words</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>&lt;-</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stringi</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>::</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stri_count_words</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>blogs</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>news_words</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>&lt;-</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stringi</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>::</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stri_count_words</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>news</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>twitter_words</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>&lt;-</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stringi</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>::</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>stri_count_words</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>twitter</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>hist</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>blogs_words</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>ggplot2</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>::</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>qplot</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>blogs_words</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><img border=0 width=624 height=445 id="Picture 1"
+src="Data%20Science%20Capstone%20KC21_files/image001.jpg"></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:white'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## `stat_bin()` using `bins =
+30`. Pick better value with `binwidth`.</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><img border=0 width=624 height=445 id="Picture 5"
+src="Data%20Science%20Capstone%20KC21_files/image002.jpg"></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:whitesmoke'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>ggplot2</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>::</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>qplot</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>news_words</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## `stat_bin()` using `bins =
+30`. Pick better value with `binwidth`.</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><img border=0 width=624 height=445 id="Picture 6"
+src="Data%20Science%20Capstone%20KC21_files/image003.jpg"></p>
+
+<p class=MsoNormal style='margin-top:15.0pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><span
+style='font-size:18.0pt;font-family:"inherit","serif";color:#333333'>3. Report
+any interesting findings that you amassed so far.</span></p>
+
+<div style='border:solid #CCCCCC 1.0pt;padding:7.0pt 7.0pt 7.0pt 7.0pt;
+background:whitesmoke'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+whitesmoke;word-break:break-all;border:none;padding:0in'><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>ggplot2</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>::</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>qplot</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>(</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black'>twitter_words</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#687687'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white;word-break:break-all;border:none;padding:0in'><span style='font-size:
+10.0pt;font-family:"Courier New";color:#333333'>## `stat_bin()` using `bins =
+30`. Pick better value with `binwidth`.</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><img border=0 width=624 height=445 id="Picture 7"
+src="Data%20Science%20Capstone%20KC21_files/image004.jpg"></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>The frequency distribution plot of twitter data set is very
+different compared to distribution plots of blogs and news. This is because of
+the 140 characters limit of twitter messages.</span></p>
+
+<p class=MsoNormal style='margin-top:15.0pt;margin-right:0in;margin-bottom:
+7.5pt;margin-left:0in;line-height:normal;background:white'><span
+style='font-size:18.0pt;font-family:"inherit","serif";color:#333333'>4. Get
+feedback on your plans for creating a prediction algorithm and Shiny app.</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:normal;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica","sans-serif";
+color:#333333'>Based on the exploratory data analysis of the given data sets, I
+will be building basic n-gram model for predicting the next word based on the
+previous 1, 2 or 3 words. In addition, I will build a model to handle unseen
+n-grams, for example, people will want to type a combination of words that does
+not appear in the corpora. Hence, I will work to build a model to handle cases
+where a particular n-gram isn’t observed. Finally, the predictive text mining
+application will be hosted to run on the Shiny Apps server.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
